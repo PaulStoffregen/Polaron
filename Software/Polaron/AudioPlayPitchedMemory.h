@@ -23,6 +23,7 @@
 #ifndef AudioPlayPitchedMemory_h
 #define AudioPlayPitchedMemory_h
 
+#include <Audio.h>
 #include <AudioStream.h>
 
 class AudioPlayPitchedMemory : public AudioStream

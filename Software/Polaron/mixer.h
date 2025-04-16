@@ -28,6 +28,7 @@
 #ifndef mixer8_h_
 #define mixer8_h_
 
+#include <Arduino.h>
 #include "AudioStream.h"
 
 class AudioMixer8 : public AudioStream {
