@@ -71,7 +71,12 @@ HatsChannel channel6;
 
 AudioMixer8 mixer1;
 AudioMixer8 mixer2;
-AudioOutputAnalogStereo dacs1;
+
+#if defined(__IMXRT1062__)
+AudioOutputPT8211       dacs1;  // Teensy 4.1 use PT8211 kit soldered on top
+#else
+AudioOutputAnalogStereo dacs1;  // Teensy 3.5 / 3.6 use DAC pins
+#endif
 
 AudioConnection patchCord8(*channel1.getOutput1(), 0, mixer1, 0);
 AudioConnection patchCord9(*channel2.getOutput1(), 0, mixer1, 1);
