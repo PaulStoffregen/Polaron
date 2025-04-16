@@ -2,6 +2,8 @@
 
 Polaron is a DIY digital drum machine based on the [Teensy 3.6](https://www.pjrc.com/teensy/) USB Microcontroller plattform.
 
+This copy includes experimental support for [Teensy 4.1](https://www.pjrc.com/store/teensy41.html) with [PT8211 kit](https://www.pjrc.com/store/pt8211_kit.html) for audio output.  See updated FAQ below and [this forum conversation](https://forum.pjrc.com/index.php?threads/posted-polaron-diy-drum-machine.54388/page-2#post-357428) for details.
+
 Main features:
 
 - 16 step sequencer
